@@ -1,0 +1,42 @@
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.title__block,
+.title__img {
+    width: calc(50% - 10px);
+}
+
+.main__title {
+    color: #FFF;
+    font-family: Nunito Sans;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.title__block p {
+
+    font-size: 28px;
+    line-height: 140%;
+    max-width: 555px;
+    margin-top: 40px;
+}
+
+.title__button {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #141418;
+    font-size: 18px;
+    padding: 20px 44px;
+    border-radius: 50px;
+    background: #FFF;
+    line-height: 1.1;
+}

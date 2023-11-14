@@ -1,0 +1,30 @@
+@font-face {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/NunitoSans_700.ttf) format("opentype")
+}
+
+@font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Inter-Regular.ttf) format("opentype")
+}
+
+body {
+    background: #141418;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.wrapper {
+    width: calc(100% - 40px);
+    max-width: 1360px;
+    margin: 0 auto;
+    margin-top: 140px;
+}

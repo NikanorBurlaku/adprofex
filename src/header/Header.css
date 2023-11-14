@@ -1,0 +1,20 @@
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+}
+.menu__list{
+    display: flex;
+    gap: 24px;
+}
+.nav__button{
+    display: none;
+}
+.menu__list--link{
+    transition: .5s;
+    
+}
+.menu__list--link:hover{
+    color: #EAA16D;
+}
