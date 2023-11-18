@@ -1,0 +1,73 @@
+.about__title .second__title {
+    width: 85%;
+}
+
+.about__title>p {
+    margin-top: 30px;
+    color: rgba(66, 87, 160, 0.50);
+    font-size: 24px;
+    line-height: 140%;
+}
+
+.about__container {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.3fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
+        "about_grid1 about_grid2 about_grid3"
+        "about_grid4 about_grid2 about_grid6"
+        "about_grid4 about_grid5 about_grid6";
+    margin-top: 85px;
+}
+
+.about__block {
+    border-radius: 13px;
+    background: linear-gradient(0deg, rgba(255, 194, 150, 0.25) -29.63%, rgba(255, 194, 150, 0.00) 49.89%), radial-gradient(80.02% 84.36% at 24.43% -32.04%, rgba(66, 87, 160, 0.50) 0%, rgba(66, 87, 160, 0.00) 100%), #2B2F3D;
+    padding: 44px 54px 50px;
+}
+.about_grid1 {
+    grid-area: about_grid1;
+}
+
+.about_grid2 {
+    grid-area: about_grid2;
+}
+
+.about_grid3 {
+    grid-area: about_grid3;
+}
+
+.about_grid4 {
+    grid-area: about_grid4;
+}
+
+.about_grid5 {
+    grid-area: about_grid5;
+}
+
+.about_grid6 {
+    grid-area: about_grid6;
+}
+
+
+.about__block--title {
+    font-family: Nunito Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    line-height: 140%;
+}
+
+.about__block--title span {
+    color: #141418;
+
+}
+
+.about__block--descr {
+    margin-top: 30px;
+    font-size: 19px;
+    line-height: 140%;
+}

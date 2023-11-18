@@ -2,7 +2,7 @@
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: 700;
-    src: url(../fonts/NunitoSans_700.ttf) format("opentype")
+    src: url(../fonts/NunitoSans_700.woff2) format("opentype")
 }
 
 @font-face {
@@ -27,4 +27,12 @@ body {
     max-width: 1360px;
     margin: 0 auto;
     margin-top: 140px;
+}
+
+.second__title {
+    color: #FFF;
+    font-family: Nunito Sans;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 110%;
 }

@@ -1,0 +1,116 @@
+.contact {
+    max-width: 1560px;
+    margin: 0 auto;
+    padding: 100px;
+    border-radius: 13px;
+    border: 1px solid #92E4DD;
+    margin-top: 140px;
+}
+
+.contact .wrapper {
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__title {
+    width: 45%;
+}
+
+.contact__form {
+    width: 50%;
+}
+
+.contact__images {
+    margin-top: 70px;
+}
+.contact__img{
+    height: 200px;
+}
+
+.contant__inputs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+.contact__input {
+    width: calc(50% - 10px);
+    padding: 15px 24px;
+}
+
+.contact__textarea {
+    width: 100%;
+    height: 170px;
+    resize: none
+}
+
+.contact__input,
+.contact__textarea {
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.90);
+    color: rgba(20, 20, 24, 0.50);
+    font-size: 18px;
+    line-height: 140%;
+    padding: 15px 24px;
+}
+
+.contact__input:focus,
+.contact__textarea:focus {
+    background: #FFF;
+    color: #141418;
+}
+
+.form__bottom {
+    margin-top: 35px;
+    display: flex;
+    gap: 32px;
+}
+
+.form__checkbox {
+    width: calc(100% - 250px);
+    display: flex;
+    gap: 13px;
+    align-items: start;
+}
+
+.contact__form-button {
+    padding: 20px 44px;
+    color: #141418;
+    font-size: 18px;
+    line-height: 1;
+    border-radius: 50px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form__checkbox-span {
+    width: 23px;
+    height: 14px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.90);
+    padding: 2px;
+}
+
+.form__checkbox-span img {
+    width: 100%;
+    display: none;
+}
+
+.feedback__form-span.active img {
+    display: block;
+}
+
+.form__checkbox #checkbox {
+    display: none;
+}
+
+.form__checkbox p {
+    color: rgba(66, 87, 160, 0.50);
+    font-size: 14px;
+    line-height: 140%;
+}
