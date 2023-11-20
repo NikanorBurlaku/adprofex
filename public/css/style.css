@@ -6,6 +6,13 @@
 }
 
 @font-face {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/NunitoSans_400.woff2) format("opentype")
+}
+
+@font-face {
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
@@ -35,4 +42,8 @@ body {
     font-size: 64px;
     font-weight: 700;
     line-height: 110%;
+}
+
+main {
+    position: relative;
 }

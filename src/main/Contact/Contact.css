@@ -25,7 +25,8 @@
 .contact__images {
     margin-top: 70px;
 }
-.contact__img{
+
+.contact__img {
     height: 200px;
 }
 
@@ -86,14 +87,28 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    opacity: 0.5;
+    transition: .5s;
+}
+
+.contact__form-button.active {
+    opacity: 1;
+}
+
+.contact__form-button.active:hover {
+    box-shadow: 0px 4px 20px 0px rgba(255, 255, 255, 0.60);
 }
 
 .form__checkbox-span {
-    width: 23px;
+    width: 14px;
     height: 14px;
     border-radius: 4px;
     background: rgba(255, 255, 255, 0.90);
     padding: 2px;
+}
+
+.form__checkbox-span.active img {
+    display: block;
 }
 
 .form__checkbox-span img {
@@ -101,16 +116,61 @@
     display: none;
 }
 
-.feedback__form-span.active img {
-    display: block;
-}
-
 .form__checkbox #checkbox {
     display: none;
 }
 
 .form__checkbox p {
-    color: rgba(66, 87, 160, 0.50);
+    color: #858894;
     font-size: 14px;
     line-height: 140%;
+    width: calc(100% - 27px);
 }
+
+.thanks {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    background: rgba(20, 20, 24, 0.40);
+    z-index: 5;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    cursor: pointer
+}
+
+.thanks.active {
+    display: flex
+}
+
+.thanks__container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 430px;
+    padding: 83px;
+    border-radius: 13px;
+    background: linear-gradient(0deg, #FFF 0%, #FFF 100%), #141418;
+    position: relative;
+}
+.thanks__container::after{
+    content: url(../../../public/img/close-thanks.svg);
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+
+
+.thanks__container p {
+    color: #141418;
+    text-align: center;
+    font-family: Nunito Sans;
+    font-size: 32px;
+}
+
