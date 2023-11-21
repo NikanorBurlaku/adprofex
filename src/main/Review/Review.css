@@ -1,0 +1,47 @@
+/* Общий контейнер слайдера */
+.slider {
+    position: relative;
+    max-width: 100%;
+}
+
+/* Контейнер для слайдов */
+.slides {
+    display: flex;
+    margin: 0 -10px;
+    overflow: hidden;
+}
+
+/* Каждый слайд */
+.slide {
+    flex: 0 0 calc(33.33% - 20px);
+    /* Установка ширины слайда с учетом отступа между слайдами */
+    box-sizing: border-box;
+    margin: 0 10px;
+    /* Установка отступа между слайдами */
+    transition: transform 0.5s ease;
+    background-size: cover;
+    background-position: center;
+    border-radius: 13px;
+    background: #2B2F3D;
+    padding: 54px;
+    display: flex;
+    gap: 20px;
+    height: 416px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.slide__description {
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.slide img {
+    margin-left: -25px;
+}
+.slide__name{
+    color: #858894;
+    font-size: 18px;
+    line-height: normal;
+}
