@@ -1,21 +1,15 @@
 import React from 'react';
+import './Footer.css';
 
 function Footer() {
   return (
     <footer className="wrapper">
-      {/* <span className="footer__logo">
-        <img src="img/footer.svg" alt="" />
-      </span>
-
-      <a href="mailto:info@profitlab.online" className="footer__mail">
-        <img src="img/footer-mail.svg" alt="" />
-        info@profitlab.online
-      </a>
-
-      <p className="footer__links">
-        <a href="">Пользовательское соглашение</a>
-        <a href="">Политика конфиденциальности</a>
-      </p> */}
+      <img src="img/logo.svg" alt="logo" class="logo__img" />
+      <div className='footer__links'>
+        <a href='mailto:info@adprofex-ltd.com'>info@adprofex-ltd.com</a>
+        <a href='privacy.pdf'>Privacy Policy</a>
+        <span>Adprofrex Limited 2023</span>
+      </div>
     </footer>
   );
 }

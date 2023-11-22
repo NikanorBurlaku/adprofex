@@ -13,6 +13,7 @@ function Main() {
             <Contact />
             <Review />
             <Faq />
+            <a href='' className='main__button'>Сontact us today <img src="img/arrow.svg" alt=""></img></a>
         </main>
     );
 }

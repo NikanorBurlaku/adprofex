@@ -47,3 +47,23 @@ body {
 main {
     position: relative;
 }
+
+.main__button {
+    border-radius: 50px;
+    background: linear-gradient(275deg, rgba(255, 194, 150, 0.40) 6.36%, rgba(255, 194, 150, 0.00) 67.36%), #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    font-size: 18px;
+    color: #141418;
+    line-height: 1;
+    width: 100%;
+    max-width: 275px;
+    margin: 140px auto 0;
+    transition: .5s;
+}
+.main__button:hover{
+box-shadow: 0px 4px 20px 0px rgba(255, 255, 255, 0.60);
+}

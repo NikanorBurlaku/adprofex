@@ -10,7 +10,7 @@ function Faq() {
     };
 
     return (
-        <div className='wrapper review'>
+        <div className='wrapper faq'>
             <h2 className='second__title'>FAQ</h2>
             <div className='faq__container'>
                 <div className='faq__item' onClick={() => toggleDescription(0)}>
