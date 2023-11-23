@@ -18,3 +18,8 @@ header .wrapper{
 .menu__list--link:hover{
     color: #EAA16D;
 }
+@media (max-width: 1000px) {
+    .logo__img{
+        max-width: 170px;
+    }
+}

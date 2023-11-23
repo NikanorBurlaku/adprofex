@@ -1,7 +1,8 @@
 .contact {
     max-width: 1560px;
+    width: calc(100% - 40px);
     margin: 0 auto;
-    padding: 100px;
+    padding: 98px;
     border-radius: 13px;
     border: 1px solid #92E4DD;
     margin-top: 140px;
@@ -28,19 +29,48 @@
 }
 
 .contact__title {
-    width: 45%;
+    width: calc(50% - 125px)
 }
 
-.contact__form {
-    width: 50%;
-}
 
 .contact__images {
-    margin-top: 70px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    position: relative;
 }
 
-.contact__img {
-    height: 200px;
+.contact__img:nth-of-type(1) {
+    margin-top: 45px;
+}
+
+.contact_dot1,
+.contact_dot2 {
+    position: absolute;
+    opacity: 1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.contact_dot1 {
+    top: 40%;
+    left: 15%;
+    animation-name: blink;
+    animation-delay: 0.2s;
+}
+
+.contact_dot2 {
+    top: 16%;
+    left: 79%;
+    animation-name: blink;
+    animation-delay: 1.5s;
+}
+
+
+.contact__form {
+    width: calc(50% - 10px);
 }
 
 .contant__inputs {
@@ -89,6 +119,13 @@
     gap: 13px;
     align-items: start;
 }
+.form__checkbox a{
+    text-decoration: underline;
+    transition: .5s;
+}
+.form__checkbox a:hover{
+    text-decoration: none;
+}
 
 .contact__form-button {
     padding: 20px 44px;
@@ -102,6 +139,7 @@
     gap: 10px;
     opacity: 0.5;
     transition: .5s;
+    max-width: 220px;
 }
 
 .contact__form-button.active {
@@ -186,4 +224,71 @@
     text-align: center;
     font-family: Nunito Sans;
     font-size: 32px;
+}
+
+@media (max-width:1000px) {
+    .contact {
+        padding: 60px 49px;
+        margin-top: 110px;
+    }
+    .contact::after{
+        height: 6px;
+        width: 200px;
+        transform: translate(-50%, 3px);
+    
+    }
+    .contact__title {
+        width: calc(50% - 85px);
+    }
+
+    .contact__images {
+        flex-direction: column-reverse;
+        margin-top: 80px;
+    }
+
+    .contact__img:nth-of-type(1) {
+        margin-top: 30px;
+        width: 240px;
+    }
+
+    .contact__img:nth-of-type(2) {
+        align-self: flex-end;
+        width: 170px;
+    }
+
+    .contact_dot1 {
+        top: 61%;
+        left: 19%;
+        width: 65px;
+        height: 65px;
+    }
+
+    .contact_dot2 {
+        top: 12%;
+        left: 73%;
+        width: 37px;
+        height: 37px;
+    }
+    .contact__input, .contact__textarea{
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .contant__inputs{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contact__input{
+        width: 100%;
+    }
+    .contact__textarea{
+        height: 140px;
+    }
+    .form__bottom{
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .form__checkbox{
+        width: 100%;
+    }
 }

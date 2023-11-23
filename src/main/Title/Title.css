@@ -1,6 +1,5 @@
 .title {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin-top: 90px;
 }
@@ -17,6 +16,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
+    margin-top: 20px;
 }
 
 .title__block p {
@@ -41,6 +41,156 @@
     line-height: 1.1;
     transition: .5s;
 }
-.title__button:hover{
+
+.title__button:hover {
     box-shadow: 0px 4px 20px 0px rgba(255, 255, 255, 0.60);
+}
+
+.title__img {
+    position: relative;
+}
+
+.bg__title {
+    width: 100%;
+}
+
+.dot {
+    position: absolute;
+}
+
+.dot1 {
+    top: 27%;
+    left: 24%;
+}
+
+.dot2 {
+    top: 31.5%;
+    left: 50%;
+}
+
+.dot3 {
+    top: 27%;
+    left: 64%;
+}
+
+.dot4 {
+    top: 45%;
+    left: 35%;
+}
+
+.dot5 {
+    top: 52%;
+    left: 50%;
+}
+
+.dot6 {
+    top: 66%;
+    left: 44%;
+}
+
+.dot {
+    opacity: 1;
+    animation-duration: 3s;
+    /* Продолжительность анимации */
+    animation-iteration-count: infinite;
+    /* Бесконечное повторение */
+    animation-timing-function: ease-in-out;
+    /* Равномерное изменение скорости анимации */
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    /* Начальное и конечное значение */
+    50% {
+        opacity: 0.75;
+    }
+
+    /* Значение в середине анимации */
+}
+
+.dot1 {
+    animation-name: blink;
+    animation-delay: 0s;
+}
+
+.dot2 {
+    animation-name: blink;
+    animation-delay: 0.5s;
+}
+
+.dot3 {
+    animation-name: blink;
+    animation-delay: 2.3s;
+}
+
+.dot4 {
+    animation-name: blink;
+    animation-delay: 1s;
+}
+
+.dot5 {
+    animation-name: blink;
+    animation-delay: 1.7s;
+}
+
+.dot6 {
+    animation-name: blink;
+    animation-delay: 1.2s;
+}
+
+@media (max-width: 1000px) {
+    .title {
+        margin-top: 65px;
+    }
+
+    .main__title {
+        margin-top: 35px;
+        font-size: 56px;
+    }
+
+    .title__block p {
+        font-size: 22px;
+    }
+
+    .title__button {
+        margin-top: 50px;
+    }
+
+    .dot1 {
+        width: 37px;
+        height: 37px;
+    }
+
+    .dot2 {
+        width: 45px;
+        height: 45px;
+    }
+
+    .dot3 {
+        width: 45px;
+        height: 45px;
+    }
+
+    .dot4 {
+        width: 45px;
+        height: 45px;
+
+    }
+
+    .dot5 {
+        width: 37px;
+        height: 37px;
+
+    }
+
+    .dot6 {
+        width: 45px;
+        height: 45px;
+
+    }
 }

@@ -89,7 +89,7 @@
     font-size: 0;
     line-height: 0;
     position: absolute;
-    top: 250px;
+    bottom: 160px;
 
     display: block;
 
@@ -114,4 +114,16 @@
 
 .slick-next:before {
     content: url('../../../public/img/next.svg');
+}
+
+@media (max-width: 1000px) {
+    .slick-prev {
+        left: 0;
+        bottom: 0px;
+    }
+
+    .slick-next {
+        right: 0;
+        bottom: 0px;
+    }
 }

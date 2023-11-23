@@ -35,7 +35,7 @@
     width: 6px;
     height: 80px;
     top: 50%;
-    background-image: url(../../../public//img/faq-ellipse.svg);
+    background-image: url(../../../public/img/faq-ellipse.svg);
     position: absolute;
     z-index: 3;
 }
@@ -107,4 +107,26 @@
 
 .faq__close.rotate {
     transform: rotate(45deg);
+}
+@media (max-width:1000px) {
+    .faq__item{
+        padding: 33px 36px;
+    }
+    .faq__descr-block{
+        margin-top: 25px;
+        width: 100%;
+    }
+    .faq__descr{
+        font-size: 16px;
+    }
+    .faq__item:nth-child(odd)::after{
+        transform: translate(-50%, -50%);
+        width: 5px;
+    }
+
+    .faq__item:nth-child(even)::before{
+        transform: translate(60%, -50%);
+        width: 5px;
+
+    }
 }

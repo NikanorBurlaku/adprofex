@@ -17,20 +17,20 @@ function Contact() {
             setSubmitted(true);
 
             // Отправка данных на сервер
-            // fetch('http://localhost:3001/submitForm', {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json',
-            //     },
-            //     body: JSON.stringify(formData),
-            // })
-            //     .then((response) => response.json())
-            //     .then((data) => {
-            //         console.log(data);
-            //     })
-            //     .catch((error) => {
-            //         console.error(error);
-            //     });
+            fetch('http://localhost:3001/submitForm', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data);
+                })
+                .catch((error) => {
+                    console.error(error);
+                });
         };
     }
     const handleInputChange = (e) => {
@@ -63,7 +63,10 @@ function Contact() {
                     <div className='contact__title'>
                         <h2 className='second__title'>Contact us </h2>
                         <div className='contact__images'>
-                            <img className='contact__img' src='img/contact.svg' alt='' />
+                            <img className='contact__img' src='img/contact-back1.svg' alt='' />
+                            <img className='contact__img' src='img/contact-back2.svg' alt='' />
+                            <img className='contact_dot1' src='img/contact-dot1.svg' alt='' />
+                            <img className='contact_dot2' src='img/contact-dot2.svg' alt='' />
                         </div>
                     </div>
 
@@ -81,8 +84,7 @@ function Contact() {
                                 </span>
                                 <input type="checkbox" name="checkbox" id="checkbox" />
                                 <p>
-                                    I give my consent to the processing of personal data in accordance with the full text of the
-                                    <a href="agreement.pdf">Privacy Policy</a>
+                                    I give my consent to the processing of personal data in accordance with the full text of the <a href="agreement.pdf">Privacy Policy</a>
                                 </p>
                             </label>
                             <button type="submit" className={(formData.agreeToTerms) ? 'contact__form-button active' : 'contact__form-button'} disabled={!formData.agreeToTerms}> Сontact us <img src='img/arrow.svg' alt='' /></button>

@@ -71,3 +71,29 @@
     font-size: 19px;
     line-height: 140%;
 }
+@media (max-width: 1000px) {
+    
+    .about__title>p{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .about__container{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    .about__block{
+        width: calc(50% - 10px);
+        padding: 18px 26px 72px;
+    }
+    .about__block:nth-of-type(2){
+        padding-bottom: 24px;
+    }
+    .about__block--descr{
+        margin-top: 17px;
+    }
+    .about__block--descr{
+        font-size: 17px;
+    }
+}
