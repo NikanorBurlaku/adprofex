@@ -41,6 +41,7 @@
     line-height: 1.1;
     transition: .5s;
     max-width: 222px;
+    font-weight: 400;
 }
 
 .title__button:hover {
@@ -237,6 +238,7 @@
     .title__button{
         position: absolute;
         margin-top: 0;
+        max-width: 100%;
         width: 100%;
         top: 405%;
     }
@@ -260,6 +262,18 @@
     }
     .title__img{
         margin-top: 25px;
+    }
+}
+
+@media (max-width: 400px){
+    .title__button{
+        top: 370%;
+    }
+}
+
+@media (max-width: 380px){
+    .title__button{
+        top: 300%;
     }
 }
 @media (max-width: 360px){
