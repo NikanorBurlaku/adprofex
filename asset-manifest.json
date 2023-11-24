@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/adprofex/static/css/main.201525b9.css",
+    "main.js": "/adprofex/static/js/main.7038a4b0.js",
+    "static/js/787.2d250dbd.chunk.js": "/adprofex/static/js/787.2d250dbd.chunk.js",
+    "static/media/faq-bg.svg": "/adprofex/static/media/faq-bg.654029381ce06d91f179.svg",
+    "static/media/close-thanks.svg": "/adprofex/static/media/close-thanks.cb6c1dc7a8b0dbf4d621.svg",
+    "static/media/prev.svg": "/adprofex/static/media/prev.b966f5335dce63061111.svg",
+    "static/media/next.svg": "/adprofex/static/media/next.a0ba8dc4957750a31032.svg",
+    "static/media/faq-ellipse.svg": "/adprofex/static/media/faq-ellipse.7dcd63a9e160105dd25b.svg",
+    "index.html": "/adprofex/index.html",
+    "main.201525b9.css.map": "/adprofex/static/css/main.201525b9.css.map",
+    "main.7038a4b0.js.map": "/adprofex/static/js/main.7038a4b0.js.map",
+    "787.2d250dbd.chunk.js.map": "/adprofex/static/js/787.2d250dbd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.201525b9.css",
+    "static/js/main.7038a4b0.js"
+  ]
+}
