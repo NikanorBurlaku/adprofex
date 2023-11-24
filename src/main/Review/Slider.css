@@ -133,8 +133,15 @@
         width: calc(100% + 10px);
     }
 }
+
+@media (max-width:420px) {
+    .slick-list {
+        width: calc(100% + 20px);
+    }
+}
+
 @media (max-width:360px) {
     .slick-slider {
-       margin-top: 45px;
+        margin-top: 45px;
     }
 }
