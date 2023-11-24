@@ -5,7 +5,7 @@ function About() {
 
 
     return (
-        <div className='wrapper about'>
+        <div className='wrapper about' id='about'>
             <div className='about__title'>
                 <h2 className='second__title'>Scale Your Business With Our Proven Lead Generation Services</h2>
                 <p>Your leads are our concern.</p>

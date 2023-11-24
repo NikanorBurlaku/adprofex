@@ -27,10 +27,20 @@ const settings = {
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 481,
+      settings: {
+        slidesToShow: 1.06,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '25px',
+      }
+    },
+    {
+      breakpoint: 361,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        centerMode: false,
       }
     }
   ]

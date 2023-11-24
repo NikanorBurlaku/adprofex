@@ -9,7 +9,7 @@ function Title() {
             <div className='title__block'>
                 <h1 className='main__title'>Creative Agency Lead Generation</h1>
                 <p>Increase your profit: striking results through KPI-centric marketing campaigns</p>
-                <button className='title__button'>Сontact us <img src='img/arrow.svg' alt='' /></button>
+                <a href='#contact' className='title__button'>Сontact us <img src='img/arrow.svg' alt='' /></a>
             </div>
             <div className='title__img'>
 

@@ -27,6 +27,7 @@
     background: linear-gradient(0deg, rgba(255, 194, 150, 0.25) -29.63%, rgba(255, 194, 150, 0.00) 49.89%), radial-gradient(80.02% 84.36% at 24.43% -32.04%, rgba(66, 87, 160, 0.50) 0%, rgba(66, 87, 160, 0.00) 100%), #2B2F3D;
     padding: 44px 54px 50px;
 }
+
 .about_grid1 {
     grid-area: about_grid1;
 }
@@ -68,32 +69,98 @@
 
 .about__block--descr {
     margin-top: 30px;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 140%;
 }
+
 @media (max-width: 1000px) {
-    
-    .about__title>p{
+
+    .about__title>p {
         margin-top: 20px;
         font-size: 20px;
     }
-    .about__container{
+
+    .about__container {
         margin-top: 50px;
         display: flex;
         flex-wrap: wrap;
         align-items: stretch;
     }
-    .about__block{
+
+    .about__block {
         width: calc(50% - 10px);
         padding: 18px 26px 72px;
     }
-    .about__block:nth-of-type(2){
+
+    .about__block:nth-of-type(2) {
         padding-bottom: 24px;
     }
-    .about__block--descr{
+
+    .about__block--descr {
         margin-top: 17px;
     }
+
+    .about__block--descr {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about__title .second__title {
+        width: 100%;
+    }
+
+    .about__block {
+        padding: 18px 20px 70px;
+    }
+
+    .about__block:nth-of-type(2) {
+        padding-bottom: 26px;
+    }
+
+    .about__block--title {
+        font-size: 24px;
+    }
+
+    .about__block--descr {
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width:480px) {
+    .about__title>p {
+        margin-top: 18px;
+        font-size: 18px;
+    }
+    .about__container{
+        margin-top: 45px;
+    }
+    .about__block{
+        width: 100%;
+        padding: 29px 25px;
+    }
+    .about__block:nth-of-type(2){
+        padding-bottom: 29px;
+    }
+}
+@media (max-width:480px) {
+    .about__title>p {
+        margin-top: 16px;
+        font-size: 16px;
+    }
+    .about__container{
+        margin-top: 40px;
+        gap: 16px;
+    }
     .about__block--descr{
-        font-size: 17px;
+        font-size: 14px;
+        margin-top: 14px;
+    }
+    .about__block--title{
+        font-size: 20px;
+    }
+    .about__block--title span{
+        font-size: 24px;
     }
 }

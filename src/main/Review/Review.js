@@ -33,7 +33,7 @@ function Review() {
 
 
     return (
-        <div className='wrapper review'>
+        <div className='wrapper review' id='review'>
             <h2 className='second__title'>Reviews</h2>
             <Slider slides={slidesData} />
         </div>

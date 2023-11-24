@@ -40,22 +40,44 @@
 .slide img {
     margin-left: -25px;
 }
-.slide__name{
+
+.slide__name {
     color: #858894;
     font-size: 18px;
     line-height: normal;
 }
+
 @media (max-width: 1000px) {
-    .slick-slider{
+    .slick-slider {
         margin-top: 50px;
         padding-bottom: 30px;
     }
-    .slide{
-        padding: 38px;  
+
+    .slide {
+        padding: 38px;
         height: 310px;
     }
+
     .slide__name,
-    .slide__description{
+    .slide__description {
         font-size: 16px;
+    }
+}
+
+@media (max-width:768px) {
+    .slide {
+        height: 340px;
+        padding: 38px 28px;
+        gap: 0;
+    }
+}
+
+@media (max-width:768px) {
+    .slide{
+        padding: 38px 26px;
+    }
+    .slick-slide img {
+        width: 130px;
+        margin-left: -17px;
     }
 }

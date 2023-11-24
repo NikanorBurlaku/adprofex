@@ -40,6 +40,7 @@
     background: #FFF;
     line-height: 1.1;
     transition: .5s;
+    max-width: 222px;
 }
 
 .title__button:hover {
@@ -192,5 +193,77 @@
         width: 45px;
         height: 45px;
 
+    }
+}
+@media (max-width:768px) {
+    .title{
+        margin-top: 60px;
+    }
+    .main__title{
+        font-size: 46px;
+    }
+    .title__img{
+        width: 470px;
+        position: absolute;
+        right: -40px;
+        z-index: -1;
+    }
+    .title__block p{
+        margin-top: 30px;
+    }
+    .title__button{
+        margin-top: 45px;
+    }
+}
+@media (max-width:480px) {
+    .title{
+        margin-top: 30px;
+        flex-direction: column;
+        padding-bottom: 105px;
+    }
+    .main__title{
+        font-size: 36px;
+        width: 80%;
+        margin-top: 0;
+    }
+    .title__block{
+        width: 100%;
+        position: relative;
+    }
+    .title__block p{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .title__button{
+        position: absolute;
+        margin-top: 0;
+        width: 100%;
+        top: 405%;
+    }
+    .title__img{
+        width: 100%;
+        position: relative;
+        right: 0;
+        margin-top: 45px;
+    }
+}
+@media (max-width: 480px) {
+    .title{
+        margin-top: 55px;
+    }
+    .main__title{
+        width: 100%;
+    }
+    .title__block p{
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    .title__img{
+        margin-top: 25px;
+    }
+}
+@media (max-width: 360px){
+    .title__button{
+        top: 300%;
     }
 }

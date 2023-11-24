@@ -58,7 +58,7 @@ function Contact() {
 
     return (
         <>
-            <div className='contact'>
+            <div className='contact' id='contact'>
                 <div className='wrapper'>
                     <div className='contact__title'>
                         <h2 className='second__title'>Contact us </h2>

@@ -119,11 +119,13 @@
     gap: 13px;
     align-items: start;
 }
-.form__checkbox a{
+
+.form__checkbox a {
     text-decoration: underline;
     transition: .5s;
 }
-.form__checkbox a:hover{
+
+.form__checkbox a:hover {
     text-decoration: none;
 }
 
@@ -136,10 +138,11 @@
     background: #FFF;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     opacity: 0.5;
     transition: .5s;
-    max-width: 220px;
+    max-width: 222px;
 }
 
 .contact__form-button.active {
@@ -231,12 +234,14 @@
         padding: 60px 49px;
         margin-top: 110px;
     }
-    .contact::after{
+
+    .contact::after {
         height: 6px;
         width: 200px;
         transform: translate(-50%, 3px);
-    
+
     }
+
     .contact__title {
         width: calc(50% - 85px);
     }
@@ -269,26 +274,139 @@
         width: 37px;
         height: 37px;
     }
-    .contact__input, .contact__textarea{
+
+    .contact__input,
+    .contact__textarea {
         font-size: 16px;
         padding: 10px 20px;
     }
-    .contant__inputs{
+
+    .contant__inputs {
         flex-direction: column;
         gap: 10px;
     }
-    .contact__input{
+
+    .contact__input {
         width: 100%;
     }
-    .contact__textarea{
+
+    .contact__textarea {
         height: 140px;
     }
-    .form__bottom{
+
+    .form__bottom {
         margin-top: 20px;
         flex-direction: column;
         gap: 20px;
     }
-    .form__checkbox{
+
+    .form__checkbox {
         width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 30px 28px;
+    }
+
+    .contact::after {
+        transform: translate(-50%, 3.5px);
+    }
+
+    .contact .wrapper {
+        flex-direction: column;
+    }
+
+    .contact__images {
+        display: none;
+    }
+
+    .contact__form {
+        margin-top: 35px;
+        width: 100%;
+    }
+
+    .contant__inputs {
+        gap: 20px;
+        flex-direction: row;
+    }
+
+    .contact__input {
+        width: calc(50% - 10px);
+    }
+
+    .contact__input,
+    .contact__textarea {
+        padding: 15px 24px;
+    }
+
+    .form__bottom {
+        margin-top: 30px;
+        flex-direction: row;
+    }
+
+    .form__checkbox {
+        width: calc(100% - 250px);
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        margin-top: 85px;
+        width: 100%;
+        padding: 50px 19px;
+    }
+    .contact::after{
+        width: 150px;
+        height: 4px;
+        transform: translate(-50%, 2.5px);
+    }
+    .contact__title {
+        width: 100%;
+    }
+
+    .contact__form {
+        margin-top: 40px;
+    }
+
+    .contant__inputs {
+        gap: 18px;
+    }
+
+    .contact__input {
+        width: 100%;
+    }
+
+    .contact__input,
+    .contact__textarea {
+        padding: 11px 21px;
+    }
+
+    .form__bottom {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .form__checkbox {
+        width: 100%;
+    }
+
+    .contact__form-button {
+
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width: 360px) {
+    .contact{
+        padding: 36px 19px;
+    }
+    .contact__form{
+        margin-top: 30px;
+    }
+    .contact__input, .contact__textarea{
+        padding: 11px 15px;
+        font-size: 14px;
     }
 }

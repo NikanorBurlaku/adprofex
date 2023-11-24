@@ -119,11 +119,22 @@
 @media (max-width: 1000px) {
     .slick-prev {
         left: 0;
-        bottom: 0px;
+        bottom: -8px;
     }
 
     .slick-next {
         right: 0;
-        bottom: 0px;
+        bottom: -8px;
+    }
+}
+
+@media (max-width:480px) {
+    .slick-list {
+        width: calc(100% + 10px);
+    }
+}
+@media (max-width:360px) {
+    .slick-slider {
+       margin-top: 45px;
     }
 }

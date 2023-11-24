@@ -16,9 +16,11 @@
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
-    src: url(../fonts/Inter-Regular.ttf) format("opentype")
+    src: url(../fonts/Inter-Regular.woff2) format("opentype")
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     background: #141418;
     font-family: 'Inter', sans-serif;
@@ -28,7 +30,9 @@ body {
     font-weight: 400;
     line-height: 140%;
 }
-
+#root{
+    overflow: hidden;
+}
 .wrapper {
     width: calc(100% - 40px);
     max-width: 1360px;
@@ -64,17 +68,45 @@ main {
     margin: 140px auto 0;
     transition: .5s;
 }
-.main__button:hover{
-box-shadow: 0px 4px 20px 0px rgba(255, 255, 255, 0.60);
+
+.main__button:hover {
+    box-shadow: 0px 4px 20px 0px rgba(255, 255, 255, 0.60);
 }
+
 @media (max-width: 1000px) {
-    .wrapper{
+
+    .wrapper,
+    .main__button {
         margin-top: 110px;
     }
-    .second__title{
+
+    .second__title {
         font-size: 40px;
     }
+}
+
+@media (max-width: 768px) {
     .main__button{
-        margin-top: 110px;
+        margin-top: 90px;
+    }
+}
+@media (max-width: 480px) {
+    .wrapper,
+    .main__button{
+        margin-top: 85px;
+    }
+    .second__title{
+        font-size: 32px;
+    }
+    .main__button{
+        max-width: calc(100% - 40px);
+    }
+}
+@media (max-width: 360px){
+    .second__title{
+        font-size: 24px;
+    }
+    .main__button{
+        margin-top: 75px;
     }
 }
