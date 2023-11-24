@@ -144,6 +144,7 @@
     opacity: 0.5;
     transition: .5s;
     max-width: 222px;
+    width: 100%;
 }
 
 .contact__form-button.active {
